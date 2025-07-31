@@ -1,25 +1,10 @@
-import dotenv from 'dotenv'
-dotenv.configDotenv()
-
-import express from 'express'
-import cors from 'cors'
+import 'dotenv/config'
 import { initializeDB } from './config/db.ts';
+import { app } from './app.ts';
 
-
-//Environments variable
-
-const app = express();
 const PORT = process.env.PORT || 3000;
  
 // Initialize data base
-
-
-// Middleware
-app.use(cors())
-app.use(express.json())
-
-// Routes
-
 
 
 
